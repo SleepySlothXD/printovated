@@ -43,7 +43,7 @@ nav {
 }
 @media (max-width: 768px) {
     .nav-logo {
-        width: 95px;
+        width: 120px;
         height: auto;
     }
     .nav-cart {
