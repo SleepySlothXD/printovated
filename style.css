@@ -41,6 +41,32 @@ nav {
     height: auto;
     margin-right: 20px;
 }
+.popout {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    width: 300px;
+    height: 600px;
+    background-color: #000;
+    opacity: 95%;
+    top: 0;
+    right: -450px;
+    z-index: 10;
+}
+.popout-ul {
+    list-style-type: none;
+    padding: 45px 30px;
+}
+.popout-li {
+    margin: 20px 0;
+}
+.popout-cart {
+    width: 35px;
+    height: auto;
+    margin: 30px 30px;
+    position: absolute;
+}
 @media (max-width: 768px) {
     .nav-logo {
         width: 120px;
@@ -71,6 +97,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
+    gap: 0 30px;
 }
 .header-image {
     width: 100%;
@@ -132,7 +159,7 @@ header {
     transform: scale(1.1);
 }
 /* End Header */
-/* Dynamic */
+/* Start Footer */
 .Under-Construction {
     background-color: yellow;
     height: 30px;
