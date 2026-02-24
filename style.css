@@ -39,7 +39,16 @@ nav {
 .nav-cart {
     width: 35px;
     height: auto;
-    margin-right: 15px;
+    margin-right: 20px;
+}
+@media (max-width: 768px) {
+    .nav-logo {
+        width: 95px;
+        height: auto;
+    }
+    .nav-cart {
+        margin-right: 10px;
+    }
 }
 .current-page:hover,
 .nav-link:hover {
@@ -71,7 +80,7 @@ header {
     border-radius: 10px;
     margin-left: 10px;
 }
-.header-text {
+.header-right {
     color: #fff;
     max-width: 500px;
     display: flex;
@@ -83,8 +92,18 @@ header {
     font-size: 36px;
     margin: 0 0 10px 0;
 }
-.header-description {
+.header-paragraph {
     font-size: 18px;
+}
+.header-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 20px;
 }
 @media (max-width: 768px) {
     header {
@@ -98,14 +117,22 @@ header {
         max-height: 100%;
         margin: 0 0 20px 0;
     }
-    .header-text {
+    .header-right {
         margin: 0;
     }
-    .header-description {
+    .header-paragraph {
+        margin-top: 0;
+    }
+    .header-button {
         margin-top: 0;
     }
 }
+.header-button:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
 /* End Header */
+/* Dynamic */
 .Under-Construction {
     background-color: yellow;
     height: 30px;
