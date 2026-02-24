@@ -14,30 +14,35 @@
         <div class="nav-right">
             <ul class="nav-ul">
                 <li class="nav-li"><a class="current-page" href="index.html">Home</a></li>
-                <!-- <li class="nav-li"><a class="nav-link" href="about-us.html">About Us</a></li> -->
+                <li class="nav-li"><a class="nav-link" href="about-us/index.html">About Us</a></li>
                 <li class="nav-li"><a class="nav-link" href="shop.html">Shop</a></li>
             </ul>
             <a href="cart.html"><img src="pictures/cart.png" alt="cart" class="nav-cart"></a>
         </div>
     <!-- Start Popout -->
-        <div class="popout">
+        <div class="popout" id="popout">
             <a href="cart.html"><img src="pictures/cart.png" alt="cart" class="popout-cart"></a>
             <ul class="popout-ul">
                 <li class="popout-li"><a class="current-page" href="index.html">Home</a></li>
-                <li class="popout-li"><a class="nav-link" href="about-us.html">About Us</a></li>
+                <li class="popout-li"><a class="nav-link" href="about-us/index.html">About Us</a></li>
                 <li class="popout-li"><a class="nav-link" href="shop.html">Shop</a></li>
             </ul>
+        </div>
+        <div class="ham-menu" id="ham-menu">
+            <div class="ham-top"></div>
+            <div class="ham-middle"></div>
+            <div class="ham-bottom"></div>
         </div>
     <!-- End Popout -->
     </nav>
     <!-- End Navigation Bar -->
     <!-- Start Header -->
-    <header>
-        <img src="pictures/3D-Printed-Object-On-Desk.jpeg" alt="3D Printed Object On Desk" class="header-image">
-        <div class="header-right">
-            <h1 class="header-title">Grab your print today!</h1>
-            <p class="header-paragraph">Discover our wide range of 3D printed products and accessories.</p>
-            <a href="shop.html"><button class="header-button">Shop Now!</button></a>
+    <header class="home-header">
+        <img src="pictures/3D-Printed-Object-On-Desk.jpeg" alt="3D Printed Object On Desk" class="home-header-image">
+        <div class="home-header-right">
+            <h1 class="home-header-title">Grab your print today!</h1>
+            <p class="home-header-paragraph">Discover our wide range of 3D printed products and accessories.</p>
+            <a href="shop.html"><button class="home-header-button">Shop Now!</button></a>
         </div>
     </header>
     <!-- End Header -->
@@ -46,5 +51,6 @@
         <p>This site is under construction and some features are not yet available.</p>
      </div>
     <!-- End Footer -->
+    <script src="index.js"></script>
 </body>
 </html>

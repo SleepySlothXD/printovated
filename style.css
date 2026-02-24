@@ -26,21 +26,26 @@ nav {
     color: #fff;
     text-decoration: none;
     font-size: 20px;
+    transition: all 0.3s ease-in-out;
 }
 .current-page {
     color: #fff;
     text-decoration: underline;
     font-size: 20px;
+    transition: all 0.3s ease-in-out;
 }
 .nav-logo {
     width: 120px;
     height: auto;
+    transition: all 0.3s ease-in-out;
 }
 .nav-cart {
     width: 35px;
     height: auto;
     margin-right: 20px;
+    transition: all 0.3s ease-in-out;
 }
+/* Start Popout Menu */
 .popout {
     display: flex;
     flex-direction: column;
@@ -53,6 +58,7 @@ nav {
     top: 0;
     right: -450px;
     z-index: 10;
+    transition: all 0.3s ease-in-out;
 }
 .popout-ul {
     list-style-type: none;
@@ -66,6 +72,22 @@ nav {
     height: auto;
     margin: 30px 30px;
     position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+.ham-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+}
+.ham-menu div {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 2px 0;
+    transition: all 0.3s ease;
 }
 @media (max-width: 768px) {
     .nav-logo {
@@ -75,23 +97,36 @@ nav {
     .nav-cart {
         margin-right: 10px;
     }
+    .ham-menu {
+        display: flex;
+    }
+    .nav-right {
+        display: none;
+    }
 }
+.popout.active {
+    right: 0;
+}
+.popout-cart:hover,
+.ham-menu:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+/* End Popout Menu */
 .current-page:hover,
 .nav-link:hover {
     color: #fff;
     text-decoration: underline;
     font-size: 22px;
-    transition: all 0.3s ease;
 }
 .nav-logo:hover,
 .nav-cart:hover {
     transform: scale(1.1);
-    transition: all 0.3s ease;
     cursor: pointer;
 }
 /* End Navigation Bar */
-/* Start Header */
-header {
+/* Start Home Header */
+.home-header {
     height: 400px;
     display: flex;
     justify-content: space-between;
@@ -99,7 +134,7 @@ header {
     padding: 20px 40px;
     gap: 0 30px;
 }
-.header-image {
+.home-header-image {
     width: 100%;
     height: auto;
     max-width: 500px;
@@ -107,7 +142,7 @@ header {
     border-radius: 10px;
     margin-left: 10px;
 }
-.header-right {
+.home-header-right {
     color: #fff;
     max-width: 500px;
     display: flex;
@@ -115,14 +150,14 @@ header {
     align-items: center;
     margin-right: 65px;
 }
-.header-title {
+.home-header-title {
     font-size: 36px;
     margin: 0 0 10px 0;
 }
-.header-paragraph {
+.home-header-paragraph {
     font-size: 18px;
 }
-.header-button {
+.home-header-button {
     background-color: #000;
     color: #fff;
     border: none;
@@ -131,34 +166,91 @@ header {
     cursor: pointer;
     border-radius: 20px;
     margin-top: 20px;
+    transition: all 0.3s ease-in-out;
 }
 @media (max-width: 768px) {
-    header {
+    .home-header {
         flex-direction: column;
         height: auto;
         padding: 20px;
         text-align: center;
     }
-    .header-image {
+    .home-header-image {
         max-width: 100%;
         max-height: 100%;
         margin: 0 0 20px 0;
     }
-    .header-right {
+    .home-header-right {
         margin: 0;
     }
-    .header-paragraph {
+    .home-header-paragraph {
         margin-top: 0;
     }
-    .header-button {
-        margin-top: 0;
+    .home-header-button {
+        margin-top: 5px;
     }
 }
-.header-button:hover {
-    transition: all 0.3s ease;
+.home-header-button:hover {
     transform: scale(1.1);
 }
-/* End Header */
+/* End Home Header */
+/* Start About Us Header */
+.about-header {
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 0 30px;
+}
+.about-header-image {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    max-height: 300px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.about-header-text {
+    color: #fff;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 55px;
+    text-align: center;
+    border: #fff solid 2px;
+    border-radius: 15px;
+    background-color: #111;
+    padding: 20px;
+}
+.about-header-title {
+    font-size: 36px;
+    margin: 0 0 10px 0;
+    text-decoration: underline;
+}
+.about-header-paragraph {
+    font-size: 20px;
+}
+@media (max-width: 768px) {
+    .about-header {
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+    .about-header-image {
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0 0 20px 0;
+    }
+    .about-header-text {
+        margin: 0;
+    }
+    .about-header-paragraph {
+        margin-top: 0;
+    }
+}
 /* Start Footer */
 .Under-Construction {
     background-color: yellow;
