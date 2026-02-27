@@ -252,7 +252,7 @@ nav {
     padding: 20px;
     max-height: 300px;
     overflow: hidden;
-    width: 400px;
+    max-width: 100%;
     height: auto;
 }
 .about-header-title {
